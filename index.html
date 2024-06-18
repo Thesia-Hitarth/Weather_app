@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="heading">Check Your Location Weather!</h1>
+        <div class="box">
+            <div class="row row1">
+                <input type="search" id="search" placeholder="Enter Your Location">
+                <button class="searchbtn"> <i class="ri-search-eye-line"></i></button>
+            </div>
+            <div class="notfound">
+                <h1>Sorry! Location not Found.</h1>
+                <img src="assets/404.png" alt="404_Error">
+            </div>
+            <div class="row row2">
+                <img src="assets/clear.png" alt="Weather-image" class="weather-image">
+                <div class="weather-text">
+                    <div class="wea-text"><p class="temperature">0</p><sup>°C</sup></div>
+                    <p class="temp-text">Light</p>
+                </div>
+            </div>
+            <div class="humidity-wind">
+                <div class="humidity">
+                    <i class="ri-water-percent-fill"></i>
+                    <div class="humidity-text">
+                        <p class="h-deg">45%</p>
+                        <p class="h-text">Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="ri-windy-line"></i>
+                    <div class="wind-text">
+                        <p class="w-deg">12Km/h</p>
+                        <p class="w-text">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
